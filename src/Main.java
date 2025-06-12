@@ -1,5 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        // Launch the Othello game
+        javax.swing.SwingUtilities.invokeLater(() -> {
+            OthelloGUI game = new OthelloGUI();
+            game.setVisible(true);
+        });
     }
 }
